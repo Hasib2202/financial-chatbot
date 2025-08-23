@@ -25,22 +25,26 @@ An AI-powered chatbot that answers questions about financial policy documents us
 ### Installation
 
 1. **Clone the repository:**
+
 ```bash
 git clone https://github.com/Hasib2202/financial-chatbot.git
 cd financial-chatbot
 ```
 
 2. **Install dependencies:**
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. **Run the web interface:**
+
 ```bash
 streamlit run streamlit_app_professional.py
 ```
 
 4. **Open your browser and go to:**
+
 ```
 http://localhost:8501
 ```
@@ -48,6 +52,7 @@ http://localhost:8501
 ## 📚 How to Use
 
 ### Web Interface
+
 1. Start the Streamlit app using the command above
 2. Ask questions about financial policy in the chat interface
 3. Use the "📋 Generate Executive Summary" button for conversation analysis
@@ -58,6 +63,7 @@ http://localhost:8501
    - "How does taxation relate to GSP?"
 
 ### Command Line
+
 ```python
 from chatbot import FinancialChatbot
 
@@ -70,7 +76,9 @@ print(response)
 ```
 
 ### Jupyter Notebook Demo
+
 Open `financial_chatbot_demo.ipynb` in Jupyter Lab/Notebook to see:
+
 - Complete implementation walkthrough
 - Interactive examples
 - Technical demonstrations
@@ -110,6 +118,7 @@ financial-chatbot/
 ## 💡 Example Interactions
 
 ### Budget Analysis
+
 ```
 👤 User: "What is the budget situation?"
 🤖 Bot: "## 💰 BUDGET ANALYSIS
@@ -120,6 +129,7 @@ financial-chatbot/
 ```
 
 ### Risk Assessment
+
 ```
 👤 User: "What are the financial risks?"
 🤖 Bot: "## ⚖️ FINANCIAL RISK ASSESSMENT
@@ -135,7 +145,7 @@ financial-chatbot/
 ✅ **Vector Database**: ChromaDB with semantic search implemented  
 ✅ **Conversation Memory**: Context-aware responses with conversation tracking  
 ✅ **Clear Responses**: Professional formatting with source citations  
-✅ **Web Interface**: Modern Streamlit application with excellent UX  
+✅ **Web Interface**: Modern Streamlit application with excellent UX
 
 ## Overview
 
@@ -339,12 +349,15 @@ Bot: [Provides additional debt details]
 ## 🚀 Deployment Options
 
 ### Local Development
+
 ```bash
 streamlit run streamlit_app_professional.py
 ```
 
 ### Production Deployment
+
 The application is designed to run locally without external API dependencies:
+
 - No OpenAI API required
 - Local vector database (ChromaDB)
 - Offline embeddings (Sentence Transformers)
@@ -355,11 +368,13 @@ The application is designed to run locally without external API dependencies:
 ### Common Issues
 
 1. **Import Error**: Ensure all dependencies are installed
+
    ```bash
    pip install -r requirements.txt
    ```
 
 2. **Document Not Found**: Verify `financial_policy_document.txt` exists
+
    ```bash
    ls financial_policy_document.txt
    ```
@@ -372,6 +387,7 @@ The application is designed to run locally without external API dependencies:
 ## 🤝 Contributing
 
 This project is designed for assessment purposes. For questions or clarifications:
+
 - **Email**: hasanmahmudnayeem3027@gmail.com
 - **GitHub**: https://github.com/Hasib2202/financial-chatbot
 
