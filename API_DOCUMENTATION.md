@@ -5,55 +5,64 @@
 ### Core Classes
 
 #### `FinancialChatbot(document_path: str)`
+
 Main chatbot interface for financial policy queries.
 
 **Parameters:**
+
 - `document_path` (str): Path to financial policy document
 
 **Methods:**
+
 ```python
 ask(question: str) -> str
     """Ask a question and get formatted response"""
-    
+
 get_conversation_summary() -> str
     """Get summary of current conversation"""
 ```
 
 #### `DocumentProcessor(document_path: str)`
+
 Handles document processing and extraction.
 
 **Methods:**
+
 ```python
 process_document() -> List[Dict[str, any]]
     """Process document into structured chunks"""
-    
+
 extract_financial_data(text: str) -> Dict[str, any]
     """Extract financial data from text"""
 ```
 
 #### `VectorDatabase(collection_name: str)`
+
 Manages ChromaDB vector operations.
 
 **Methods:**
+
 ```python
 add_documents(documents: List[Dict]) -> None
     """Add documents to vector database"""
-    
+
 search(query: str, n_results: int = 3) -> List[Dict]
     """Semantic search for relevant content"""
 ```
 
 #### `ConversationMemory(max_history: int = 10)`
+
 Manages conversation context and memory.
 
 **Methods:**
+
 ```python
 add_interaction(question: str, response: str) -> None
     """Add Q&A pair to memory"""
-    
+
 enhance_question(question: str) -> str
     """Enhance vague questions with context"""
-    
+
 clear_history() -> None
     """Clear conversation history"""
 ```
@@ -61,6 +70,7 @@ clear_history() -> None
 ## 🚀 Advanced Usage Examples
 
 ### Example 1: Custom Financial Document Processing
+
 ```python
 from chatbot import DocumentProcessor, VectorDatabase, FinancialChatbot
 
@@ -78,6 +88,7 @@ response = chatbot.ask("What are our quarterly results?")
 ```
 
 ### Example 2: Batch Query Processing
+
 ```python
 # Process multiple queries
 queries = [
@@ -98,6 +109,7 @@ for query in queries:
 ```
 
 ### Example 3: Custom Response Formatting
+
 ```python
 # Access raw search results
 search_results = chatbot.vector_db.search("budget deficit", n_results=5)
@@ -110,6 +122,7 @@ for result in search_results:
 ```
 
 ### Example 4: Conversation Analysis
+
 ```python
 # Analyze conversation patterns
 summary = chatbot.get_conversation_summary()
@@ -123,6 +136,7 @@ print(f"Recent topics: {context['recent_topics']}")
 ## 🔌 Integration Examples
 
 ### Streamlit Integration
+
 ```python
 import streamlit as st
 from chatbot import FinancialChatbot
@@ -140,6 +154,7 @@ if user_input:
 ```
 
 ### Flask API Integration
+
 ```python
 from flask import Flask, request, jsonify
 from chatbot import FinancialChatbot
@@ -152,7 +167,7 @@ def ask_question():
     data = request.json
     question = data.get('question', '')
     response = chatbot.ask(question)
-    
+
     return jsonify({
         'question': question,
         'response': response,
@@ -163,6 +178,7 @@ def ask_question():
 ## ⚙️ Configuration Options
 
 ### Environment Variables
+
 ```bash
 # Optional: Custom embedding model
 EMBEDDING_MODEL=all-MiniLM-L6-v2
@@ -176,6 +192,7 @@ CHUNK_OVERLAP=200
 ```
 
 ### Advanced Configuration
+
 ```python
 # Custom text splitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -194,6 +211,7 @@ custom_model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 ## 🛠️ Debugging & Troubleshooting
 
 ### Enable Debug Logging
+
 ```python
 import logging
 
@@ -206,6 +224,7 @@ logger.debug(f"Search results: {len(results)} documents found")
 ```
 
 ### Performance Monitoring
+
 ```python
 import time
 
@@ -217,6 +236,7 @@ print(f"Response time: {end_time - start_time:.3f} seconds")
 ```
 
 ---
+
 **API Version:** 1.0  
 **Last Updated:** August 30, 2025  
 **Compatibility:** Python 3.8+

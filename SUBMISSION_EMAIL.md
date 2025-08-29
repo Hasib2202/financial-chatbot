@@ -23,22 +23,26 @@ The Financial Policy Chatbot is a production-ready AI system that answers questi
 
 ## ✅ ASSESSMENT REQUIREMENTS - ALL COMPLETED
 
-1. **✅ Extract Data from Document:** 
+1. **✅ Extract Data from Document:**
+
    - Advanced financial information extraction and structuring
    - 20 document chunks with metadata enrichment
    - Automated section classification and keyword extraction
 
-2. **✅ Vector Database Implementation:** 
+2. **✅ Vector Database Implementation:**
+
    - ChromaDB with persistent local storage
    - Sentence Transformers (all-MiniLM-L6-v2) embeddings
    - Semantic similarity search with 95%+ relevance accuracy
 
-3. **✅ Conversation Memory System:** 
+3. **✅ Conversation Memory System:**
+
    - Context tracking across dialogue sessions
    - Automatic query enhancement for vague follow-ups
    - Topic-aware response generation
 
-4. **✅ Clear & Professional Responses:** 
+4. **✅ Clear & Professional Responses:**
+
    - Topic-specific formatting (Budget, Debt, Risk, Infrastructure, Taxation)
    - Source citations with document section references
    - Professional layouts with emojis, tables, and structured information
@@ -52,6 +56,7 @@ The Financial Policy Chatbot is a production-ready AI system that answers questi
 ## 🚀 QUICK START INSTRUCTIONS
 
 ### One-Command Setup:
+
 ```bash
 git clone https://github.com/Hasib2202/financial-chatbot.git
 cd financial-chatbot
@@ -60,6 +65,7 @@ streamlit run streamlit_app_professional.py
 ```
 
 ### Access Points:
+
 - **Web Interface:** http://localhost:8501
 - **Jupyter Demo:** `financial_chatbot_demo.ipynb`
 - **API Usage:** Import from `chatbot.py`
@@ -68,6 +74,7 @@ streamlit run streamlit_app_professional.py
 ## 🛠️ TECHNICAL EXCELLENCE DEMONSTRATED
 
 ### Performance Benchmarks:
+
 - **⚡ Response Speed:** ~200ms average query processing
 - **🎯 Search Accuracy:** 95%+ semantic relevance
 - **💾 Resource Efficiency:** 150MB memory footprint
@@ -75,6 +82,7 @@ streamlit run streamlit_app_professional.py
 - **📱 Cross-Platform:** Works on all modern browsers
 
 ### Architecture Highlights:
+
 - **🔧 Modular Design:** Clean, extensible codebase with comprehensive documentation
 - **🏠 Local Deployment:** Zero external API dependencies (no OpenAI/cloud services)
 - **📊 Production Ready:** Error handling, logging, and performance monitoring
@@ -100,6 +108,7 @@ financial-chatbot/
 ## 💡 INNOVATION & ADVANCED FEATURES
 
 ### 1. **Context-Aware Intelligence:**
+
 ```
 User: "What is the budget situation?"
 Bot: [Detailed budget analysis with metrics]
@@ -110,12 +119,14 @@ Bot: [Additional budget context with projections]
 ```
 
 ### 2. **Professional Response Formatting:**
+
 - **Budget Analysis:** Executive summaries with financial forecasts
 - **Risk Assessment:** Comprehensive framework analysis with mitigation strategies
 - **Debt Management:** Interest cost analysis with sustainability metrics
 - **Infrastructure:** Capital works planning with strategic project details
 
 ### 3. **Production-Grade Performance:**
+
 - **Memory Optimization:** Efficient conversation history management
 - **Error Handling:** Graceful fallbacks and user-friendly error messages
 - **Documentation:** Enterprise-level API docs and usage examples
@@ -142,6 +153,7 @@ This Financial Policy Chatbot demonstrates mastery of:
 ## 🏆 READY FOR EVALUATION
 
 The repository includes everything needed for assessment:
+
 - **Complete Source Code:** Fully commented and documented
 - **Live Demo:** Interactive Jupyter notebook showcasing all features
 - **Performance Analysis:** Detailed metrics and benchmarking
